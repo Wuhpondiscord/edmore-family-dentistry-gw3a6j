@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edmore Family Dentistry | Expert Family & Emergency Dental Care</title>
+    <meta name="description" content="Trusted by three generations in Edmore, MI. Dr. Shawn Kinser (DDS, PhD) provides expert general, pediatric, and emergency dentistry. Book your healthy smile today!">
+    
+    <!-- Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            DEFAULT: '#10B981', // Emerald 500
+                            hover: '#059669',   // Emerald 600
+                        },
+                        dark: {
+                            DEFAULT: '#0A0A0A',
+                            card: '#121212',
+                            border: '#262626'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dark text-gray-300 font-sans antialiased selection:bg-brand selection:text-white">
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 bg-dark/80 backdrop-blur-md border-b border-dark-border">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-display font-bold text-2xl tracking-tight text-white flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-brand"></span>
+                EDMORE DENTAL
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide uppercase">
+                <a href="#expertise" class="hover:text-brand transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-brand transition-colors">Services</a>
+                <a href="#visit" class="hover:text-brand transition-colors">Visit</a>
+            </nav>
+            <a href="#visit" class="cta-action hidden md:inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium bg-white text-dark rounded-full hover:bg-gray-200 transition-all">
+                Patient Portal
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section (50/50 Split) -->
+        <section class="min-h-screen pt-20 flex flex-col lg:flex-row border-b border-dark-border">
+            <div class="flex-1 flex flex-col justify-center px-6 lg:px-20 py-20 lg:py-0 border-r-0 lg:border-r border-dark-border relative">
+                <div class="absolute top-10 left-6 lg:left-20">
+                    <span class="text-[10px] font-bold tracking-widest text-brand uppercase">01 / Introduction</span>
+                </div>
+                <h1 class="font-display text-6xl lg:text-[5rem] leading-[0.95] font-black text-white mb-8 tracking-tight">
+                    CLINICAL<br>
+                    MASTERY.<br>
+                    <span class="text-gray-500">COMMUNITY<br>LEGACY.</span>
+                </h1>
+                <p class="text-lg max-w-md text-gray-400 mb-10 leading-relaxed">
+                    Advanced pharmacology meets family-focused dental care in Montcalm County. Led by Dr. Shawn Kinser, DDS, PhD.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#visit" id="cta-button" class="cta-action inline-flex items-center justify-center px-8 py-4 bg-brand text-white font-medium rounded-full hover:bg-brand-hover transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)]">
+                        Book Your Appointment
+                    </a>
+                    <a href="#expertise" class="cta-action inline-flex items-center justify-center px-8 py-4 bg-transparent border border-dark-border text-white font-medium rounded-full hover:bg-white/5 transition-all">
+                        Discover Our USP
+                    </a>
+                </div>
+            </div>
+            <div class="flex-1 bg-dark-card relative overflow-hidden flex items-center justify-center p-10 min-h-[50vh] lg:min-h-0">
+                <!-- Abstract Technical/SaaS Visual Representation of Dentistry -->
+                <div class="w-full max-w-md aspect-square rounded-full border border-dark-border flex items-center justify-center relative">
+                    <div class="w-3/4 h-3/4 rounded-full border border-brand/30 flex items-center justify-center animate-pulse-slow">
+                        <div class="w-1/2 h-1/2 rounded-full bg-brand/10 blur-xl"></div>
+                    </div>
+                    <div class="absolute bottom-10 right-10 bg-dark border border-dark-border p-6 rounded-2xl shadow-2xl">
+                        <p class="font-display font-bold text-white text-2xl">PhD</p>
+                        <p class="text-xs text-gray-500 uppercase tracking-wider mt-1">Pharmacology</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise / USP (Bento Grid) -->
+        <section id="expertise" class="py-24 px-6 lg:px-12 max-w-[1400px] mx-auto">
+            <div class="mb-16">
+                <span class="text-[10px] font-bold tracking-widest text-brand uppercase mb-4 block">02 / The Edmore Advantage</span>
+                <h2 class="font-display text-4xl lg:text-5xl font-bold text-white tracking-tight">Unmatched Clinical Depth.</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[240px]">
+                <!-- Bento Box 1 -->
+                <div class="md:col-span-2 md:row-span-2 bg-dark-card border border-dark-border rounded-3xl p-10 flex flex-col justify-end relative group hover:border-brand/50 transition-colors">
+                    <div class="absolute top-10 right-10 w-12 h-12 rounded-full bg-brand/10 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    </div>
+                    <h3 class="font-display text-3xl font-bold text-white mb-3">Dr. Shawn Kinser, DDS, PhD</h3>
+                    <p class="text-gray-400">Holding a rare PhD in Pharmacology & Toxicology alongside his DDS. We provide a level of safety in sedation and complex care that competitors simply cannot match.</p>
+                </div>
+                
+                <!-- Bento Box 2 -->
+                <div class="md:col-span-2 bg-dark-card border border-dark-border rounded-3xl p-8 flex flex-col justify-center hover:border-gray-500 transition-colors">
+                    <h3 class="font-display text-xl font-bold text-white mb-2">Three Generations of Trust</h3>
+                    <p class="text-gray-400 text-sm">Serving the Edmore, Stanton, and Lakeview communities with pediatric-friendly care and a deep-rooted legacy.</p>
+                </div>
+
+                <!-- Bento Box 3 -->
+                <div class="bg-brand border border-brand-hover rounded-3xl p-8 flex flex-col justify-center text-dark hover:scale-[1.02] transition-transform cursor-pointer cta-action" onclick="window.location.href='#visit'">
+                    <h3 class="font-display text-2xl font-bold mb-2">Urgent Interventions</h3>
+                    <p class="text-dark/80 text-sm font-medium">Same-day emergency dental care available.</p>
+                    <div class="mt-4 w-8 h-8 rounded-full bg-dark text-brand flex items-center justify-center">→</div>
+                </div>
+
+                <!-- Bento Box 4 -->
+                <div class="bg-dark-card border border-dark-border rounded-3xl p-8 flex flex-col justify-center hover:border-gray-500 transition-colors">
+                    <h3 class="font-display text-xl font-bold text-white mb-2">Modern Diagnostics</h3>
+                    <p class="text-gray-400 text-sm">Utilizing the latest technological tools for precision restorative and cosmetic treatments.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services (List / Split Layout) -->
+        <section id="services" class="border-y border-dark-border flex flex-col lg:flex-row">
+            <div class="flex-1 p-10 lg:p-20 border-r-0 lg:border-r border-dark-border">
+                <span class="text-[10px] font-bold tracking-widest text-brand uppercase mb-4 block">03 / Capabilities</span>
+                <h2 class="font-display text-4xl font-bold text-white mb-10">Comprehensive Dental Solutions.</h2>
+                <div class="space-y-6">
+                    <div class="group border-b border-dark-border pb-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-display text-2xl text-white group-hover:text-brand transition-colors">Family & Pediatric Care</h3>
+                            <span class="text-gray-600 font-display">01</span>
+                        </div>
+                        <p class="text-sm text-gray-400">Gentle, comprehensive care tailored for patients of all ages, ensuring long-term oral health.</p>
+                    </div>
+                    <div class="group border-b border-dark-border pb-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-display text-2xl text-white group-hover:text-brand transition-colors">Cosmetic Dentistry</h3>
+                            <span class="text-gray-600 font-display">02</span>
+                        </div>
+                        <p class="text-sm text-gray-400">Teeth whitening, veneers, and aesthetic restorations to perfect your smile.</p>
+                    </div>
+                    <div class="group border-b border-dark-border pb-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-display text-2xl text-white group-hover:text-brand transition-colors">Oral Surgery & Root Canals</h3>
+                            <span class="text-gray-600 font-display">03</span>
+                        </div>
+                        <p class="text-sm text-gray-400">Expert, pain-free interventions backed by advanced pharmacological knowledge.</p>
+                    </div>
+                    <div class="group pb-2">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-display text-2xl text-white group-hover:text-brand transition-colors">Dentures & Restorations</h3>
+                            <span class="text-gray-600 font-display">04</span>
+                        </div>
+                        <p class="text-sm text-gray-400">Custom-fitted solutions to restore full function and confidence.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMSIgZmlsbD0iIzMzMyIvPjwvc3ZnPg==')] bg-dark-card p-10 lg:p-20 flex flex-col justify-center">
+                 <div class="bg-dark border border-dark-border p-8 rounded-2xl">
+                     <h4 class="font-display text-xl text-white mb-4">Patient Comfort is Algorithmic.</h4>
+                     <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                         Unlike typical clinical environments, we engineer your visit to minimize anxiety and maximize outcomes. Dr. Kinser's unique background ensures sedation and pain management are handled with scientific precision.
+                     </p>
+                     <button class="cta-action text-brand font-medium text-sm flex items-center gap-2 hover:text-white transition-colors">
+                         Learn about our protocols <span class="text-lg">→</span>
+                     </button>
+                 </div>
+            </div>
+        </section>
+
+        <!-- Visit / Contact -->
+        <section id="visit" class="py-24 px-6 lg:px-12 max-w-[1400px] mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div>
+                    <span class="text-[10px] font-bold tracking-widest text-brand uppercase mb-4 block">04 / Book Appointment</span>
+                    <h2 class="font-display text-4xl lg:text-5xl font-bold text-white tracking-tight mb-6">Ready for your visit?</h2>
+                    <p class="text-gray-400 mb-10">Fill out the form to request an appointment. For immediate emergency care, please call our clinic directly.</p>
+                    
+                    <div class="space-y-6 mb-10">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-dark-card border border-dark-border flex items-center justify-center flex-shrink-0 text-brand">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-medium">Location</h4>
+                                <p class="text-sm text-gray-400 mt-1">1315 E Howard City Edmore Rd<br>Edmore, MI 48829</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-dark-card border border-dark-border flex items-center justify-center flex-shrink-0 text-brand">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-medium">Contact</h4>
+                                <p class="text-sm text-gray-400 mt-1">Accepting New Patients</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-dark-card border border-dark-border rounded-3xl p-8 lg:p-10">
+                    <form id="contact-form" class="flex flex-col gap-5" onsubmit="event.preventDefault();">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div class="flex flex-col gap-2">
+                                <label for="firstName" class="text-xs font-bold tracking-widest text-gray-500 uppercase">First Name</label>
+                                <input type="text" id="firstName" class="bg-dark border border-dark-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand transition-colors" required>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label for="lastName" class="text-xs font-bold tracking-widest text-gray-500 uppercase">Last Name</label>
+                                <input type="text" id="lastName" class="bg-dark border border-dark-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand transition-colors" required>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="email" class="text-xs font-bold tracking-widest text-gray-500 uppercase">Email Address</label>
+                            <input type="email" id="email" class="bg-dark border border-dark-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand transition-colors" required>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="service" class="text-xs font-bold tracking-widest text-gray-500 uppercase">Service Needed</label>
+                            <select id="service" class="bg-dark border border-dark-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand transition-colors appearance-none">
+                                <option>General/Family Dentistry</option>
+                                <option>Emergency Dental Care</option>
+                                <option>Cosmetic & Whitening</option>
+                                <option>Oral Surgery/Root Canal</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="cta-action mt-4 w-full bg-white text-dark font-display font-bold text-lg py-4 rounded-lg hover:bg-brand hover:text-white transition-colors">
+                            Submit Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-dark-border bg-dark pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-10 mb-16">
+                <div>
+                    <a href="#" class="font-display font-bold text-2xl tracking-tight text-white flex items-center gap-2 mb-4">
+                        <span class="w-3 h-3 rounded-full bg-brand"></span>
+                        EDMORE DENTAL
+                    </a>
+                    <p class="text-sm text-gray-500 max-w-xs">
+                        Expert family & emergency dental care in Montcalm County. Clinical Mastery meets Community Legacy.
+                    </p>
+                </div>
+                <div class="flex gap-16">
+                    <div class="flex flex-col gap-4">
+                        <h5 class="text-xs font-bold tracking-widest text-white uppercase">Practice</h5>
+                        <a href="#expertise" class="text-sm text-gray-400 hover:text-brand transition-colors">About Dr. Kinser</a>
+                        <a href="#services" class="text-sm text-gray-400 hover:text-brand transition-colors">Treatments</a>
+                        <a href="#visit" class="text-sm text-gray-400 hover:text-brand transition-colors">Patient Portal</a>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h5 class="text-xs font-bold tracking-widest text-white uppercase">Legal</h5>
+                        <a href="#" class="text-sm text-gray-400 hover:text-brand transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-sm text-gray-400 hover:text-brand transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-dark-border flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-gray-600">© 2026 Edmore Family Dentistry. All rights reserved.</p>
+                <div class="text-xs text-gray-600">Built with precision.</div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- SiteFlow Analytics Tracker -->
+    <script>
+      window._sf_config = {
+        username: 'wuhp',
+        businessId: 'gw3a6j',
+        variant: 'B',
+        origin: 'https://ais-dev-iu7tq7kd2cpslaq72zxpwz-212988073263.us-west2.run.app'
+      };
+    </script>
+    <script src="./tracker.js" async></script>
+  
+    <!-- SiteFlow Analytics Tracker -->
+    <script>
+      window._sf_config = {
+        username: 'wuhp',
+        businessId: 'gw3a6j',
+        variant: 'B',
+        origin: 'http://localhost:3000'
+      };
+    </script>
+    <script src="./tracker.js" async></script>
+  </body>
+</html>
